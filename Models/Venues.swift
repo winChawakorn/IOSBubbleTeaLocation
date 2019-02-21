@@ -1,5 +1,5 @@
 //
-//  VenuesResponse.swift
+//  Venues.swift
 //  BubbleTeaLocation
 //
 //  Created by Chawakorn Suphepre on 21/2/2562 BE.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct VenuesResponse: Decodable {
-    let venues: [Venues]
+struct Venues: Decodable {
+    let name: String
+    let location: Locations
 }

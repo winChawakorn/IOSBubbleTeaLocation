@@ -10,6 +10,9 @@
 		DEA70B4822155EC900F2C2CB /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4722155EC900F2C2CB /* Place.swift */; };
 		DEA70B4B221E814200F2C2CB /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4A221E814200F2C2CB /* JsonResponse.swift */; };
 		DEA70B4D221E816D00F2C2CB /* VenuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */; };
+		DEA70B4F221E82E800F2C2CB /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4E221E82E800F2C2CB /* Venues.swift */; };
+		DEA70B51221E87D900F2C2CB /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B50221E87D900F2C2CB /* Locations.swift */; };
+		DEA70B53221E916000F2C2CB /* VenusDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B52221E916000F2C2CB /* VenusDetailViewController.swift */; };
 		DEDEC22E22154233000C43E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC22D22154233000C43E6 /* AppDelegate.swift */; };
 		DEDEC23022154233000C43E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC22F22154233000C43E6 /* ViewController.swift */; };
 		DEDEC23322154233000C43E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDEC23122154233000C43E6 /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 		DEA70B4722155EC900F2C2CB /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		DEA70B4A221E814200F2C2CB /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
 		DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
+		DEA70B4E221E82E800F2C2CB /* Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
+		DEA70B50221E87D900F2C2CB /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		DEA70B52221E916000F2C2CB /* VenusDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenusDetailViewController.swift; sourceTree = "<group>"; };
 		DEDEC22A22154233000C43E6 /* BubbleTeaLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleTeaLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEC22D22154233000C43E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDEC22F22154233000C43E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +74,8 @@
 			children = (
 				DEA70B4A221E814200F2C2CB /* JsonResponse.swift */,
 				DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */,
+				DEA70B4E221E82E800F2C2CB /* Venues.swift */,
+				DEA70B50221E87D900F2C2CB /* Locations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 				DEDEC23622154236000C43E6 /* LaunchScreen.storyboard */,
 				DEDEC23922154236000C43E6 /* Info.plist */,
 				DEA70B4722155EC900F2C2CB /* Place.swift */,
+				DEA70B52221E916000F2C2CB /* VenusDetailViewController.swift */,
 			);
 			path = BubbleTeaLocation;
 			sourceTree = "<group>";
@@ -207,12 +216,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -249,8 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA70B4822155EC900F2C2CB /* Place.swift in Sources */,
+				DEA70B4F221E82E800F2C2CB /* Venues.swift in Sources */,
 				DEA70B4D221E816D00F2C2CB /* VenuesResponse.swift in Sources */,
+				DEA70B51221E87D900F2C2CB /* Locations.swift in Sources */,
 				DEDEC23022154233000C43E6 /* ViewController.swift in Sources */,
+				DEA70B53221E916000F2C2CB /* VenusDetailViewController.swift in Sources */,
 				DEA70B4B221E814200F2C2CB /* JsonResponse.swift in Sources */,
 				DEDEC22E22154233000C43E6 /* AppDelegate.swift in Sources */,
 			);

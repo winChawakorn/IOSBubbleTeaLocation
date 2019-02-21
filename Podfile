@@ -6,6 +6,7 @@ target 'BubbleTeaLocation' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'Alamofire'
+  pod 'AlamofireImage', '~> 3.5'
   
   # Pods for BubbleTeaLocation
 
