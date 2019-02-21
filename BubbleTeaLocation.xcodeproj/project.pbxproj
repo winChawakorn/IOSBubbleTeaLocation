@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEA70B4822155EC900F2C2CB /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4722155EC900F2C2CB /* Place.swift */; };
+		DEA70B4B221E814200F2C2CB /* JsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4A221E814200F2C2CB /* JsonResponse.swift */; };
+		DEA70B4D221E816D00F2C2CB /* VenuesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */; };
 		DEDEC22E22154233000C43E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC22D22154233000C43E6 /* AppDelegate.swift */; };
 		DEDEC23022154233000C43E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEC22F22154233000C43E6 /* ViewController.swift */; };
 		DEDEC23322154233000C43E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDEC23122154233000C43E6 /* Main.storyboard */; };
 		DEDEC23522154236000C43E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDEC23422154236000C43E6 /* Assets.xcassets */; };
 		DEDEC23822154236000C43E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDEC23622154236000C43E6 /* LaunchScreen.storyboard */; };
+		EEA23AFC4B40F373633E6781 /* Pods_BubbleTeaLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3073E4D36689857E9A4BD1 /* Pods_BubbleTeaLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FC1B7835E794F3774F27568 /* Pods-BubbleTeaLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleTeaLocation.debug.xcconfig"; path = "Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6FB4F38769E3BFD8E534AF /* Pods-BubbleTeaLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleTeaLocation.release.xcconfig"; path = "Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation.release.xcconfig"; sourceTree = "<group>"; };
+		CE3073E4D36689857E9A4BD1 /* Pods_BubbleTeaLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubbleTeaLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA70B4722155EC900F2C2CB /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DEA70B4A221E814200F2C2CB /* JsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResponse.swift; sourceTree = "<group>"; };
+		DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesResponse.swift; sourceTree = "<group>"; };
 		DEDEC22A22154233000C43E6 /* BubbleTeaLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleTeaLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEC22D22154233000C43E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDEC22F22154233000C43E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA23AFC4B40F373633E6781 /* Pods_BubbleTeaLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2991F73E885FCE4CE739110C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1B7835E794F3774F27568 /* Pods-BubbleTeaLocation.debug.xcconfig */,
+				AE6FB4F38769E3BFD8E534AF /* Pods-BubbleTeaLocation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC39123CE16233CE951A3C0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE3073E4D36689857E9A4BD1 /* Pods_BubbleTeaLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA70B49221E812600F2C2CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEA70B4A221E814200F2C2CB /* JsonResponse.swift */,
+				DEA70B4C221E816D00F2C2CB /* VenuesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DEDEC22122154233000C43E6 = {
 			isa = PBXGroup;
 			children = (
+				DEA70B49221E812600F2C2CB /* Models */,
 				DEDEC22C22154233000C43E6 /* BubbleTeaLocation */,
 				DEDEC22B22154233000C43E6 /* Products */,
+				2991F73E885FCE4CE739110C /* Pods */,
+				AC39123CE16233CE951A3C0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +100,7 @@
 				DEDEC23422154236000C43E6 /* Assets.xcassets */,
 				DEDEC23622154236000C43E6 /* LaunchScreen.storyboard */,
 				DEDEC23922154236000C43E6 /* Info.plist */,
+				DEA70B4722155EC900F2C2CB /* Place.swift */,
 			);
 			path = BubbleTeaLocation;
 			sourceTree = "<group>";
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEDEC23C22154236000C43E6 /* Build configuration list for PBXNativeTarget "BubbleTeaLocation" */;
 			buildPhases = (
+				005B5AE4DEA58B6D2E27FCBA /* [CP] Check Pods Manifest.lock */,
 				DEDEC22622154233000C43E6 /* Sources */,
 				DEDEC22722154233000C43E6 /* Frameworks */,
 				DEDEC22822154233000C43E6 /* Resources */,
+				3C25820E524992B9226AECAB /* [CP] Copy Pods Resources */,
+				06FD796026E9465C122E9B33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +174,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		005B5AE4DEA58B6D2E27FCBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BubbleTeaLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06FD796026E9465C122E9B33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C25820E524992B9226AECAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BubbleTeaLocation/Pods-BubbleTeaLocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEDEC22622154233000C43E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA70B4822155EC900F2C2CB /* Place.swift in Sources */,
+				DEA70B4D221E816D00F2C2CB /* VenuesResponse.swift in Sources */,
 				DEDEC23022154233000C43E6 /* ViewController.swift in Sources */,
+				DEA70B4B221E814200F2C2CB /* JsonResponse.swift in Sources */,
 				DEDEC22E22154233000C43E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +396,7 @@
 		};
 		DEDEC23D22154236000C43E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC1B7835E794F3774F27568 /* Pods-BubbleTeaLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chawakorn.DemoDatabase.BubbleTeaLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chawakorn.BubbleTeaLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +415,7 @@
 		};
 		DEDEC23E22154236000C43E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6FB4F38769E3BFD8E534AF /* Pods-BubbleTeaLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chawakorn.DemoDatabase.BubbleTeaLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chawakorn.BubbleTeaLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
